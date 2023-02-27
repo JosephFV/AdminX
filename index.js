@@ -7,7 +7,7 @@ const client = new Client({
     partials: [User, Message, GuildMember, ThreadMember]
 });
 
-const {loadEvents} = require('./Handlers/eventHandler');
+const {loadEvents} = require('./handlers/eventHandler');
 
 client.config = require('./config.json');
 client.events = new Collection;
